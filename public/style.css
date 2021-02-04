@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
-	font-size:2.9rem;
 }
 
 html {
@@ -12,6 +11,7 @@ body {
 	text-align: center;
 	font-family: Calibri, serif;
 	background: lightblue;
+	font-size: 2rem;
 }
 header, footer {
 	margin: 0;
@@ -30,7 +30,10 @@ ul {
 	align-items: center;
 }
 li {
-	margin-right: 18px;
+	text-align: center;
+	font-size: 2.5rem;
+	width: 30%;
+	margin-bottom: 1%;
 }
 a {
 	text-decoration: none;
@@ -41,6 +44,52 @@ section, form {
 	justify-content: center;
 	align-items: center;
 }
+
 section h1 {
 	margin: 8px;
+	text-decoration-line: underline;
+	font-size: 4rem;
+	font-style: italic;
+}
+
+form, div {
+	margin-top: 2%;
+}
+
+#name, textarea {
+	margin-left: 2%;
+	font-size: 1.5rem;
+	padding: 1%;
+}
+
+#submit {
+	margin-top: 5%;
+	padding: 10%;
+	border-radius: 10px;
+	font-size: 2rem;
+}
+
+header h1 {
+	font-size: 5rem;
+	margin-bottom: 2%;
+	text-transform: uppercase;
+	text-shadow: 6px 6px 5px lightgray;
+}
+
+.item, .subItem {
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+
+span {
+	font-weight: normal;
+	text-transform: none;
+}
+
+.item {
+	text-transform: uppercase;
+}
+
+.subItem {
+	text-transform: capitalize;
 }

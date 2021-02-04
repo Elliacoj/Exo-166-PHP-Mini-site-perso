@@ -31,16 +31,15 @@ function getUserData() {
             $user= json_decode($user);
             foreach ($user as $item => $value) {
                 if(is_array($value)) {
-                    echo $item . ": <br>";
+                    echo "<p class='item'>$item: </p><br>";
                     foreach ($value as $array) {
                         foreach ($array as $subItem => $subValue) {
-                            echo $subItem . ": " . $subValue . ", ";
+                            echo "<p class='subItem'>$subItem: <span>$subValue</span></p>";
                         }
-                        echo "<br>";
                     }
                 }
                 else {
-                    echo $item . ": " . $value ."<br>";
+                    echo "<p class='item'>$item: <span>$value</span></p>";
                 }
             }
         }
